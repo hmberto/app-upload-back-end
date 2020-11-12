@@ -1,0 +1,25 @@
+{
+  "name": "app-upload-back-end",
+  "version": "1.0.0",
+  "description": "Back end of upload app project.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hmberto/app-upload-back-end.git"
+  },
+  "author": "Humberto Araújo",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/hmberto/app-upload-back-end/issues"
+  },
+  "homepage": "https://github.com/hmberto/app-upload-back-end#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.14",
+    "morgan": "^1.10.0",
+    "multer": "^1.4.2"
+  }
+}
