@@ -1,4 +1,7 @@
+const { promisify } = require('util')
 const mongoose = require('mongoose')
+const path = require('path')
+const fs = require('fs')
 
 const PostSchema = new mongoose.Schema({
   name: String,
@@ -9,6 +12,16 @@ const PostSchema = new mongoose.Schema({
     type: Date,
     default: Date.now,
   },
+})
+
+PostSchema.pre('save', function(){
+  if(!this.url){
+    this.url = `${process.env.APP_URL}/files/${this.key}`
+  }
+})
+
+PostSchema.pre('remove', function(){
+  return promisify(fs.unlink)(path.resolve(__dirname, '..', '..', 'tmp', 'uploads', this.key))
 })
 
 module.exports = mongoose.model("Post", PostSchema)
