@@ -3,6 +3,8 @@
 ![ScreenShot](https://github.com/hmberto/app-upload-front-end/blob/master/img/img01.png)
 ### React App: An image upload interface. Node.JS v14.4.0.
 
+## You can also access the Front-end of the application by [clicking here](https://github.com/hmberto/app-upload-front-end).
+
 ## How it Works
 First of all, using NodeJs v14.4.0 run **npm install** to install dependencies. Now navigate to the root and then update the **.env** file. 
 
@@ -18,6 +20,17 @@ APP_URL=http://192.168.15.9:3000
 Add the correct domain of your environment in which it is running to the **APP_URL .env** file.
 
 You can now start your application using **npm start**. After that it will be able to perform GET, POST and DELETE requests in the **/posts** route.
+
+To change the type of file that can be received:
+~~~
+const allowedMimes = [
+  'image/jpeg',
+  'image/pjpeg',
+  'image/png',
+  'image/gif'
+]
+~~~
+You can choose to receive the files you want.
 
 ## Resources
 - POST requests to send a file;
