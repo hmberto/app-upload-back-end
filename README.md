@@ -1,5 +1,4 @@
 # Upload App — Back-end
-
 ### You can also access the Front-end of the application by [clicking here](https://github.com/hmberto/app-upload-front-end).
 
 ![ScreenShot](https://github.com/hmberto/app-upload-front-end/blob/master/img/img01.png)
@@ -17,7 +16,7 @@ DB_NAME=teste
 
 APP_URL=http://192.168.15.9:3000
 ~~~
-Add the correct domain of your environment in which it is running to the **APP_URL .env** file.
+Add the correct domain of your environment in which it is running in **APP_URL** to the **.env** file.
 
 You can now start your application using **npm start**. After that it will be able to perform GET, POST and DELETE requests in the **/posts** route.
 
@@ -71,5 +70,13 @@ It's free!
 
 ## Built With:
 * [React](https://pt-br.reactjs.org/)
+
+* [fs](https://www.npmjs.com/package/fs) - v0.0.1
+* [cors](https://www.npmjs.com/package/cors) - v2.8.5
+* [multer](https://www.npmjs.com/package/multer) - v1.4.2
+* [dotenv](https://www.npmjs.com/package/dotenv) - v8.2.0
+* [morgan](https://www.npmjs.com/package/morgan) - v1.10.0
+* [express](https://www.npmjs.com/package/express) - v4.17.1
+* [mongoose](https://www.npmjs.com/package/mongoose) - v5.10.14
 
 Thank you!
