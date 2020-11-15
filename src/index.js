@@ -2,6 +2,7 @@ const express = require('express')
 const morgan = require('morgan')
 const mongoose = require('mongoose')
 const path = require('path')
+const cors = require('cors')
 require('dotenv').config()
 
 const app = express()
@@ -17,6 +18,7 @@ mongoose.connect(MONGOOSE_URL, {
   useNewUrlParser: true
 })
 
+app.use(cors())
 app.use(express.json())
 app.use(express.urlencoded({ extended: true }))
 app.use(morgan('dev'))
