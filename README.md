@@ -69,8 +69,7 @@ Also, you can use this Project as you wish.
 It's free!
 
 ## Built With:
-* [React](https://pt-br.reactjs.org/)
-
+* [React](https://pt-br.reactjs.org/) - v17.0.1
 * [fs](https://www.npmjs.com/package/fs) - v0.0.1
 * [cors](https://www.npmjs.com/package/cors) - v2.8.5
 * [multer](https://www.npmjs.com/package/multer) - v1.4.2
