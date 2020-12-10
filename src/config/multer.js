@@ -19,14 +19,21 @@ module.exports = {
     },
   }),
   limits: {
-    fileSize: 2*1024*1024,
+    fileSize: 10*1024*1024,
   },
   fileFilter: (req, file, cb) => {
     const allowedMimes = [
+      'image/jpg',
       'image/jpeg',
       'image/pjpeg',
       'image/png',
-      'image/gif'
+      'image/gif',
+      'image/bmp',
+      'image/psd',
+      'image/tiff',
+      'image/raw',
+      'image/svg',
+      'image/webp'
     ]
     if(allowedMimes.includes(file.mimetype)) {
       cb(null, true)
