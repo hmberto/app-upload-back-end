@@ -30,27 +30,34 @@ By default the Back-end only accepts **image files** with a maximum size of **2M
 
 - Navigate to **/src/config** and change the **multer.js** file.
 
-### Default (2MB):
+### Default (10MB):
 ~~~
 limits: {
-  fileSize: 2*1024*1024,
+  fileSize: 10*1024*1024,
 },
 ~~~
 
-### You can increase to as much as you want (5MB):
+### You can increase to as much as you want (50MB):
 ~~~
 limits: {
-  fileSize: 5*1024*1024,
+  fileSize: 50*1024*1024,
 },
 ~~~
 
 To change the type of file that can be received:
 ~~~
 const allowedMimes = [
+  'image/jpg',
   'image/jpeg',
   'image/pjpeg',
   'image/png',
-  'image/gif'
+  'image/gif',
+  'image/bmp',
+  'image/psd',
+  'image/tiff',
+  'image/raw',
+  'image/svg',
+  'image/webp'
 ]
 ~~~
 You can choose to receive the files you want.
